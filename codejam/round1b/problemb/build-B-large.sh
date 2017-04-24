@@ -1,0 +1,1 @@
+python solution-large.py < B-large.in > B-large.out

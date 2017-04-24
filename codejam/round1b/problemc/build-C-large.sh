@@ -1,0 +1,1 @@
+python solution-large.py < C-large.in > C-large.out

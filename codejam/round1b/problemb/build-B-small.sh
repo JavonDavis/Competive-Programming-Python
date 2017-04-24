@@ -1,0 +1,1 @@
+python solution-small.py < B-small-attempt0.in > B-small.out
