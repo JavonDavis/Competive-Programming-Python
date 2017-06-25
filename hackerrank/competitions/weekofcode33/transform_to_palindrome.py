@@ -29,11 +29,12 @@ from collections import defaultdict
 
 n, k, m = raw_input().strip().split(' ')
 n, k, m = [int(n), int(k), int(m)]
-transformations = defaultdict(set)
+transformations = [set() for _ in xrange(n+1)]
 for a0 in xrange(k):
     x, y = raw_input().strip().split(' ')
     transformations[int(x)].add(int(y))
     transformations[int(y)].add(int(x))
+
 a = map(int, raw_input().strip().split(' '))
 
 
@@ -50,7 +51,7 @@ def dfs(start, goal):
 
 
 def path_exists(n1, n2):
-    return dfs(n1, n2) or dfs(n2, n1)
+    return dfs(n1, n2)
 
 
 def lps(arr):
