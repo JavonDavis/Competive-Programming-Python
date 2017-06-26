@@ -1,2 +1,2 @@
 # Competive-Programming-Python
-Python Hackerrank solutions
+Solutions to my problems :)
